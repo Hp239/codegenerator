@@ -604,6 +604,17 @@ THEME_COMMON_CSS = """
     color:transparent !important;
 }
 
+/* hide the Streamlit / Community Cloud toolbar (Share, star, edit, GitHub) */
+[data-testid="stToolbar"],
+[data-testid="stAppDeployButton"],
+[data-testid="stMainMenu"],
+[data-testid="stDecoration"],
+#MainMenu,
+footer{
+    display:none !important;
+    visibility:hidden !important;
+}
+
 /* ----- tooltips ("Copy" / "Copied!" on the code copy button) -----
    They open outside the page, so the page text colour leaked in and left
    white text on a white box. Dark box + white text is readable in both modes. */
