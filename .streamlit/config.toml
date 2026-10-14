@@ -1,2 +1,5 @@
 [global]
 minCachedMessageSize = 1000000000
+
+[client]
+toolbarMode = "minimal"
